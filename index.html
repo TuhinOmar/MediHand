@@ -16,6 +16,16 @@
 </head>
 <body>
     
+
+
+
+
+
+<!--Header section is started here that contains navigation bar and slider / carousal -->
+
+
+
+
     <header class="container" id="home">
         <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 border-bottom fixed-top">
             <div class="container-fluid">
@@ -87,6 +97,64 @@
     </header>
 
 
+
+
+
+
+<!--request zone-->
+
+
+
+
+
+<section class="request py-5 btn-light" id="request">
+  <div class="container">
+    <div class="text-center my-5">
+      <h1>Need <span class="text-primary">help?</span></h1>
+      <hr class="w-25 m-auto">
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="zoom-in-left" data-aos-offse="200">
+        <p class="p-2">
+          If you need emergency medical service(s), please feel free to request us. Our
+          volunteers are ready to serve you to your doorstep.
+        </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="zoom-in-left" data-aos-offse="200">
+        <input type="text" class="form-control mb-2" placeholder="Name" aria-label="First name">
+        <input type="text" class="form-control mb-2" placeholder="Contact" aria-label="First name">
+        <select id="inputState" class="form-select mb-2">
+          <option selected>Choose your city</option>
+          <option>Dhaka</option>
+          <option>Chandpur</option>
+          <option>Chittagong</option>
+        </select>
+
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Select an assistence</option>
+          <option value="1">Ambulance</option>
+          <option value="2">Oxygen cylinder</option>
+          <option value="3">Fast aid</option>
+        </select>
+        
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+
+<!--About us section that describes our goals / future plan in brief-->
+
+
+
+
+
+
     <section class="about my-5" id="services">
         <div class="container">
             <div class="text-center my-5">
@@ -149,10 +217,29 @@
 
 
 
+
+
+
+
+
+
+
+
+<!--Our services section that describes our available services to the underprevilledged people-->
+
+
+
+
+
+
+
+
+
+
     <section class="services py-5 btn-light" id="activity">
       <div class="container">
         <div class="text-center my-5">
-          <h1>Our <span class="text-primary">Activity</span></h1>
+          <h1>Our <span class="text-primary">Services</span></h1>
           <hr class="w-25 m-auto">
         </div>
         <div class="row" data-aos="zoom-in-up" data-aos-offse="200">
@@ -227,6 +314,20 @@
 
 
 
+
+
+
+
+
+
+<!--Our Team section that exhibits our strong team who are working hard for humanity-->
+
+
+
+
+
+
+
     <section class="team my-5 text-center" id="team">
       <div class="container">
         <div class="text-center my-5">
@@ -273,6 +374,20 @@
 
 
 
+
+
+
+
+
+
+<!--Contact us section that helps people connect with us on emergency neeed or any other aspects-->
+
+
+
+
+
+
+
     <section class="contact py-5" id="contact">
       <div class="container">
         <div class="text-center my-5">
@@ -281,46 +396,35 @@
         </div>
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-up-left" data-aos-offse="200">
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
+            <form>
+              <!-- Name input -->
+              <div class="form-outline mb-2">
+                <input type="text" id="form4Example1" class="form-control" />
+                <label class="form-label" for="form4Example1">Name</label>
               </div>
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
+            
+              <!-- Email input -->
+              <div class="form-outline mb-2">
+                <input type="email" id="form4Example2" class="form-control" />
+                <label class="form-label" for="form4Example2">Email address</label>
               </div>
-              <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            
+              <!-- Message input -->
+              <div class="form-outline mb-2">
+                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                <label class="form-label" for="form4Example3">Message</label>
               </div>
-              
-              <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
+            
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-2">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                <label class="form-check-label" for="form4Example4">
+                  Send me a copy of this message
+                </label>
               </div>
-              <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Check me out
-                  </label>
-                </div>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-              </div>
+            
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-2">Send</button>
             </form>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end p-4" data-aos="fade-up-right" data-aos-offse="200">
@@ -330,8 +434,146 @@
       </div>
     </section>
 
+    
 
-    <div class="container-fluid bg-primary text-white p-2 text-center fs-4">Copyright @ SST, BOU</div>
+
+
+
+
+
+
+<!--footer section-->
+
+
+
+
+
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #3f51b5">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-5">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">About us</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Products</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Awards</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Help</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Contact</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Text -->
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              distinctio earum repellat quaerat voluptatibus placeat nam,
+              commodi optio pariatur est quia magnam eum harum corrupti
+              dicta, aliquam sequi voluptate quas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Text -->
+
+      <!-- Section: Social -->
+      <section class="text-center mb-5">
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </section>
+      <!-- Section: Social -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >MDBootstrap.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+
+
+
+
+
+
+
+
+
+
+<!--Javascript library tagging-->
+
+
+
 
 
 
